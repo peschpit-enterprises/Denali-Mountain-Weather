@@ -49,6 +49,22 @@ border: teal solid 1px;
 
 </body>
 
+<footer style="background-color:grey">
+<a href="https://blog.feedspot.com/weather_blogs/">
+<img src="https://blog.feedspot.com/wp-content/uploads/2018/01/weather_216px.png?x13245"/>
+<a href="https://www.facebook.com/WestCoastWeatherLLC?ref=ts&fref=ts">
+<img src="https://westcoastweather.com/wp-content/uploads/2014/01/facebook.gif" style="align-items:right"/> </a>
+<a href="https://twitter.com/weatherlegal">
+<img src="https://westcoastweather.com/wp-content/uploads/2014/01/twitter.png" style="align-items: right"/> </a>
+<p style="text-align:center; color:white">© Copyright 2019 · Denali Mountain Weather · All Rights Reserved</p>
+<div style="text-align:center">
+<strong><a href="https://www.westcoastweather.com/" style="font-size:18px; color:white">Home</a></strong> <span></span>
+<strong><a href="https://www.westcoastweather.com/services/" style="font-size:18px; color:white">  Services</a></strong> <span></span>
+<strong><a href="https://www.westcoastweather.com/case-studies/" style="font-size:18px; color:white">  Case Studies</a></strong> <span></span>
+<strong><a href="https://www.westcoastweather.com/contact/" style="font-size:18px; color:white">  Contact</a> </strong>
+</div>
+</footer>
+
+
 <script>
 </script>
-
