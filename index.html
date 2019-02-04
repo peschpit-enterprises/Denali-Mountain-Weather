@@ -1,11 +1,52 @@
 <!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8" />
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1">
+        </script>
+        <script>
+        $(window).load(function() { //start after HTML, images have loaded
+            var InfiniteRotator = {
+                init: function() {
+                    //initial fade-in time (in milliseconds)
+                    var initialFadeIn = 0;
+ 
+                    //interval between items (in milliseconds)
+                    var itemInterval = 4000;
+ 
+                    //cross-fade time (in milliseconds)
+                    var fadeTime = 0;
+ 
+                    //count number of items
+                    var numberOfItems = $('.rotating-item').length;
+ 
+                    //set current item
+                    var currentItem = 0;
+ 
+                    //show first item
+                    $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
+ 
+                    //loop through the items
+                    var infiniteLoop = setInterval(function(){
+                        $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
+ 
+                        if(currentItem == numberOfItems -1){
+                            currentItem = 0;
+                        }
+                        else{
+                            currentItem++;
+                        }
+                        $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
+ 
+                    }, itemInterval);
+                }
+            };
+ 
+            InfiniteRotator.init();
+         });
+         </script>
 </head>
-
-<body>
 <style>
-
 #header {
 border: 2px solid teal;
 }
@@ -27,6 +68,40 @@ height: 45px;
 border: teal solid 1px;
 }
 
+.container {display:grid;
+border: 2px solid teal;
+grid-template-areas: "nav article ads";
+background-color:lightGrey;
+}
+
+#rotating-item-wrapper {
+                width: 980px;
+                height: 347px;
+                margin-left: auto;
+                margin-right: auto;
+                }
+.rotating-item {
+                display: none;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 10px;
+                }
+
+h2 {
+color: teal;
+text-align: center;
+}
+
+h1 {
+font-size: 19px;
+color: teal;
+text-decoration: underline;
+}
+
+img {
+padding: 10px;
+}
+
 </style>
 
 <div id="header">
@@ -44,8 +119,62 @@ border: teal solid 1px;
 <a href="https://www.westcoastweather.com/contact/"> <button id="buttons" class="button" onclick="https://www.westcoastweather.com/contact/"><strong>Links</strong></button></a>
 </div>
 
+<div id="rotating-item-wrapper">
+        <img class="rotating-item" src="http://alaskamountainweather.com/wp-content/uploads/2015/02/home-2.jpg" width="980" height="347" />
+        <img class="rotating-item" src="http://alaskamountainweather.com/wp-content/uploads/2015/02/home-1.jpg" width="980" height="347" />
+</div>
 
-
+<div class="container">
+<div style="grid-area:nav; margin-left:10px">
+<h1 style="text-align:left"><strong>Mt. McKinley - Denali Weather</strong></h1>
+<p style="text-align:left">
+Minus 148 Degrees, a book written by Art Davidson is about the American’s first winter ascent of Denali in 1967. Minus 67 F and a 90 mph wind translates to minus 148 F on the old wind chill chart. Want the official record? The coldest (since 1990) wind chill is from November of 2003 which was minus 118 F; a temperature of minus 74 F with a wind of 18 mph.
+<img style="float: left" src="http://alaskamountainweather.com/wp-content/uploads/2014/01/gastorms.jpg" />
+<br /><br />
+Since most folks are not climbing (for good reason) in the late fall and winter when it gets this cold, what is the best time to climb? Generally from April to June (note we say generally) is the best time. Why? First thing is that we want the Aleutian Low (see map below) to have shifted out of our region and this is usually the case starting in April. During the winter the low can bring heavy snow and strong winds at times to the Denali. Later in spring and early summer this low usually has less much less impact on Denali. (Again – note the word usually.)
+<img style="float:left" src="http://alaskamountainweather.com/wp-content/uploads/2014/01/omega-290.jpg" />
+<img style="float:left" src="http://alaskamountainweather.com/wp-content/uploads/2014/01/Earth_jet_stream-290.jpg" />
+<br /><br />
+Instead of the low we would like to see a blocking ridge of high pressure (see map below) or what is known as an “Omega Block” This tends to steer weather systems away for Denali.
+We also want to make sure that the jet stream (“polar jet) has shifted and is not over the region. The map below shows that the jet is located well to the south of Alaska.
+<br /><br />
+These are just general guidelines for favorable weather patterns for Denali, but this is indeed very general. Weather changes quickly so climbers need to be prepared for rapid changes in the weather.
+</p>
+</div>
+<div style="grid-area:article; padding-left:30px; padding-right:30px;">
+<h2>ALASKA MOUNTAIN WEATHER</h2>
+<br /><br />
+<h1 style="text-align: center"><strong>Custom Forecasts</strong></h1>
+<p style="text-align: center">
+Sitting in a basecamp with the wind pounding your tent for 3 days climbers want to know when the storm is going to end. The free forecasts have not been good and you want to know if the extended forecasts show a break. You have over a month into the trip and time is running out. Time to order a custom forecast?
+<br /><br />
+Getting a custom forecast makes a lot of sense and it is a small price to pay to get a second opinion, which potentially increases your chances of a summit. Of course, no guarantees.
+<br /><br />
+Our mountain forecasting service dates back to the 1980’s and covers all the major climbing areas in the world. We have provided forecasts for some of these peaks in the Alaska Range: Denali , Mount Hunter, and Moose’s ’ Tooth (Southeast of Denali) , Mount Huntington (also southeast of Denali) to name a few. We bring our experience and expertise (see out team link)
+<br /><br />
+Our team brings vast experience of analyzing the major numerical weather prediction (NWP) models. What are these NWP? The first one, which is very crude, was done in the 1920’s and took 2 weeks to produce – all by hand. The first NWP forecast generated by computers was done in the early 1950’s.
+<br /><br />
+Currently there are over 24 NWP models now in place and many of them can be rather accurate in the short term. So it is the experience of our professionals to interpret which model is the best to use.
+<br /><br />
+There are many steps to our analysis. Frist we monitor which model is doing the best. There are spaghetti plots that plot several NWP and put out a mean. If there is small variation one can tend to have a high degree of certainty on the forecasts.
+<img src="http://alaskamountainweather.com/wp-content/uploads/2014/01/weather-map-290.jpg" alt="weather map" />
+<br /><br />
+Done? No. Then we look at ensemble forecasts. These models make minor changes to initial conditions to determine how that changes the forecast. Some of these forecasts can be obtained for $75.00.
+</p>
+</div>
+<div style="grid-area:ads; margin-right:10px">
+<h1 style="text-align:right"><strong>Sources for Weather Forecasts</strong></h1>
+<p style="text-align:right">
+There are many sources of free weather forecasts. A great source is National Weather Service (NWS) Fairbanks office. They issue forecasts during the climbing season. Go to this site and select “<a href="http://pafg.arh.noaa.gov/textforecasts.php?type=public">Mount McKinley Recreational Forecasts</a>.”  Also in the climbing season the NWS issues forecasts via the radio, or you can call 800-472-0391.
+<br /><br />
+If one has the time and understanding there are other sources but one should really understand the limitations. One source is <a href="http://www.snow-forecast.com/">snow forecasts</a>.  <a href="http://www.mountain-forecast.com/peaks/Mount-McKinley/forecasts/6194">This site</a> has more details for the summit.
+<br /><br />
+These sites are good giving a “quick” look at conditions and are called “grid forecasts.” The grid forecasts take a latitude longitude coordinate and plug that into a numerical Weather Prediction (NWP) models. The forecast that you see are calculated conditions for that exact location. Generally no detailed analysis of the models has been done. A problem can occur if the models are incorrect and off by 200 miles. Thus in reality the storm ends up over Denali and not what the grid forecast would show . .
+<br /><br />
+NWP if you understand these models and want to look at them, the European forecast models site (<a href="http://www.ecmwf.int/en/forecasts/charts">ECMWF<a/>) is probably one of the best.  Here is a link to the <a href="http://wxmaps.org/pix/nam.fcst.html">US models</a>. In conclusion, all of this gets complicated and perhaps you should consider getting a custom forecast.
+</p>
+</div>
+</div>
 
 </body>
 
