@@ -27,12 +27,27 @@ height: 45px;
 border: teal solid 1px;
 }
 
+#background {
+background-image: url('http://alaskamountainweather.com/wp-content/uploads/2015/02/home-2.jpg');
+margin-top: 5px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+border: 2px solid teal;
+}
+
 #paragraph {
 text-align: center;
 }
 
 #input {
 margin-left: 120px;
+}
+
+#submit {
+height: 35px;
+color: white;
+background-color: teal;
 }
 
 </style>
@@ -52,6 +67,8 @@ margin-left: 120px;
 <a href="https://www.westcoastweather.com/blog/"> <button id="buttons" class="button" onclick="https://www.westcoastweather.com/blog/" ><strong>Contact</strong></button></a>
 <a href="https://www.westcoastweather.com/contact/"> <button id="buttons" class="button" onclick="https://www.westcoastweather.com/contact/"><strong>Links</strong></button></a>
 </div>
+
+<div id="background">
 
 <div id="paragraph">
 <br />
@@ -78,11 +95,12 @@ We look forward to hearing from you and learning more about the forensic weather
 <br />
 <textarea rows='16' cols='64'> </textarea>
 <br /> <br />
-<button class="submit" type="submit">SUBMIT</button>
+<button id="submit" class="submit" type="submit"><strong>SUBMIT</strong></button>
 <br /> <br />
 </form>
 </div>
 
+</div>
 </body>
 
 <footer style="background-color:grey">
