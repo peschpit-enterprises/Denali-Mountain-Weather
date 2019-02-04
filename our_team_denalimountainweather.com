@@ -91,9 +91,10 @@ float: right;
 <article id="grid">
 <div class="left" style="padding-right: 50px; margin-left: 0px">
 <figure>
-<img src="http://alaskamountainweather.com/wp-content/uploads/2014/01/michael_witiw.jpg" width="130px" /> 
-<br />
-<figcapture>Michael R. Witiw, PhD</figcapture> </figure>
+<div>
+<img src="http://alaskamountainweather.com/wp-content/uploads/2014/01/michael_witiw.jpg" width="130px" style="clip-path: inset(0px 9px 9px 0px)"/> 
+</div>
+<figcapture><strong>Michael R. Witiw, PhD</strong></figcapture> </figure>
 Mr. Witiw brings 30+ years of experience to Aviation Weather Law.
 
 He holds a Master’s degree from St. Louis University, and a PhD from the Florida Institute of Technology where he also served on the faculty.
@@ -125,9 +126,9 @@ Michael served more than two decades in the United States Air Force, and has wor
 
 <div class="right" style="padding-left: 20px">
 <figure>
-<img src="http://alaskamountainweather.com/wp-content/uploads/2014/01/michael_fagin.jpg" width="180px"/>
+<img src="http://alaskamountainweather.com/wp-content/uploads/2014/01/michael_fagin.jpg" width="180px" style="clip-path: inset(0px 9px 9px 0px)" />
 <br />
-<figcapture>Michael Fagin</figcapture> </figure>
+<figcapture><strong>Michael Fagin</strong></figcapture> </figure>
 <p>Mr. Fagin has a background in weather forecasting for major expedition groups that climb Mt. Everest and other climbing venues. He is experienced in climate data retrieval and analysis for clients around the world.
 
 Michael provides forecasting services to major engineering firms for environmental studies involving rain events and air quality issues. He is a leading resource on snow forecasts for schools, and mountain weather forecasts for the climb leaders of the Seattle Mountaineers.
