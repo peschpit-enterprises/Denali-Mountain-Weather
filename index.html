@@ -49,6 +49,7 @@
 <style>
 #header {
 border: 2px solid teal;
+background-image: linear-gradient(to top right, teal, cadetblue, lightsteelblue, lightslategray, silver, white);
 }
 
 #logo {
@@ -60,15 +61,19 @@ padding-top: 10px;
 
 #buttons {
 color: charcoal;
-background-color: darksilver; 
 font-size: 19px;
 padding-left: 30px;
 padding-right: 30px;
+margin-top: 5px;
+margin-left: 5px;
+margin-right: 5px;
 height: 45px;
-border: teal solid 1px;
+border: teal solid 2px;
+background-image: linear-gradient(to top right, teal, cadetblue, lightsteelblue, lightslategray, silver, white);
 }
 
-.container {display:grid;
+.container {
+display: grid;
 border: 2px solid teal;
 grid-template-areas: "nav article ads";
 background-color:lightGrey;
@@ -111,7 +116,7 @@ padding: 10px;
 </div>
 
 <div>
-<a href="https://www.westcoastweather.com/"> <button id="buttons" class="button" onclick="index.html/"><strong>Home</strong></button></a>
+<a href="https://www.westcoastweather.com/"> <button class="button" id="buttons" onclick="index.html/" style="margin-left: 30px;"><strong>Home</strong></button></a>
 <a href="https://www.westcoastweather.com/our-weather-team/"><button id="buttons" class="button" onclick="our_team.html/"><strong>Our Team</strong></button></a>
 <a href="https://www.westcoastweather.com/services/"> <button id="buttons" class="dropbtn" onclick="alaska_weather.html"><strong>Alaska Weather</strong></button></a>  
 <a href="https://www.westcoastweather.com/case-studies/"> <button id="buttons" class="button" onclick="blog.html/"><strong>Blog</strong></button></a>
