@@ -47,6 +47,7 @@ border: 2px solid teal;
 margin: auto auto;
 display: flex;
 width: 50%;
+grid-template-areas: nav article;
 }
 
 figure {
@@ -58,6 +59,8 @@ font-size: 13px;
 }
 
 .left {
+padding-right: 50px;
+margin-left: 0px;
 grid-area: nav;
 float: left;
 }
@@ -65,6 +68,13 @@ float: left;
 .right {
 grid-area: article;
 float: right;
+padding-left: 20px
+padding-right: 350px;
+}
+
+#tealbar {
+background-color:teal;
+height: 4px;
 }
 
 
@@ -87,9 +97,9 @@ float: right;
 
 <h1> Our Team </h1>
 <hr />
-<div id="background">
+<div id="background" >
 <article id="grid">
-<div class="left" style="padding-right: 50px; margin-left: 0px">
+<div class="left">
 <figure>
 <div>
 <img src="http://alaskamountainweather.com/wp-content/uploads/2014/01/michael_witiw.jpg" width="130px" style="clip-path: inset(0px 9px 9px 0px)"/> 
@@ -124,7 +134,7 @@ Michael served more than two decades in the United States Air Force, and has wor
 </ul>
 </div>
 
-<div class="right" style="padding-left: 20px">
+<div class="right">
 <figure>
 <img src="http://alaskamountainweather.com/wp-content/uploads/2014/01/michael_fagin.jpg" width="180px" style="clip-path: inset(0px 9px 9px 0px)" />
 <br />
@@ -155,10 +165,10 @@ He attended the University of Washington to take some classes within the Atmosph
 </div>
 
 </article>
-
 </body>
 
 <footer style="background-color:grey">
+<hr id="tealbar" />
 <a href="https://blog.feedspot.com/weather_blogs/">
 <img src="https://blog.feedspot.com/wp-content/uploads/2018/01/weather_216px.png?x13245"/>
 <a href="https://www.facebook.com/WestCoastWeatherLLC?ref=ts&fref=ts">
@@ -178,3 +188,4 @@ He attended the University of Washington to take some classes within the Atmosph
 
 <script>
 </script>
+
