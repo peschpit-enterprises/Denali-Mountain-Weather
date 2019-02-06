@@ -16,7 +16,10 @@
 <style>
 
 #header {
-border: 2px solid teal;
+border: 2px solid lightsteelblue;
+background-image: linear-gradient(to top, lightblue, lightsteelblue, lightslategray, lightgrey, white);
+border-radius: 3%;
+min-width: 1300px;
 }
 
 #logo {
@@ -27,13 +30,18 @@ padding-top: 10px;
 }
 
 #buttons {
-color: charcoal;
-background-color: darksilver; 
+border-radius: 8%;
+color: darkslategray;
 font-size: 19px;
 padding-left: 30px;
 padding-right: 30px;
+margin-top: 5px;
+margin-left: 5px;
+margin-right: 5px;
 height: 45px;
-border: teal solid 1px;
+border: lightsteelblue solid 2px;
+background-image: linear-gradient(to top, lightblue, lightsteelblue, lightslategray, lightgrey, white);
+display: inline-block;
 }
 
 figcaption {
@@ -62,6 +70,20 @@ margin-right: 60px;
 margin-bottom: 120px;
 }
 
+#footer { 
+background-color: lightsteelblue;
+border: 2px teal solid;
+min-width: 1300px;
+}
+
+#footermenu {
+text-align: center;
+font-size: 18px;
+color: snow;
+font-size: 22px;
+word-spacing: 20px;
+}
+
 
 </style>
 
@@ -70,14 +92,14 @@ margin-bottom: 120px;
 <br />
 </div>
 
-<div>
-<a href="https://www.westcoastweather.com/"> <button id="buttons" class="button" onclick="https://www.westcoastweather.com/"><strong>Home</strong></button></a>
-<a href="https://www.westcoastweather.com/our-weather-team/"><button id="buttons" class="button" onclick="https://www.westcoastweather.com/our-weather-team/"><strong>Our Team</strong></button></a>
-<a href="https://www.westcoastweather.com/services/"> <button id="buttons" class="dropbtn" onclick="myFunction()"><strong>Alaska Weather</strong></button></a>  
-<a href="https://www.westcoastweather.com/case-studies/"> <button id="buttons" class="button" onclick="https://www.westcoastweather.com/case-studies/"><strong>Blog</strong></button></a>
-<a href="https://www.westcoastweather.com/links/"> <button id="buttons" class="button" onclick="https://www.westcoastweather.com/links/"><strong>Our Clients</strong></button></a>
-<a href="https://www.westcoastweather.com/blog/"> <button id="buttons" class="button" onclick="https://www.westcoastweather.com/blog/" ><strong>Contact</strong></button></a>
-<a href="https://www.westcoastweather.com/contact/"> <button id="buttons" class="button" onclick="https://www.westcoastweather.com/contact/"><strong>Links</strong></button></a>
+<div width="1280px">
+<a href="index.html"> <button class="button" id="buttons" onclick="index.html" style="margin-left: 30px;"><strong>HOME</strong></button></a>
+<a href="our_team.html"><button id="buttons" class="button" onclick="our_team.html"><strong>OUR TEAM</strong></button></a>
+<a href="alaska_weather.html"> <button id="buttons" class="dropbtn" onclick="alaska_weather.html"><strong>ALASKA WEATHER</strong></button></a>  
+<a href="blog.html"> <button id="buttons" class="button" onclick="blog.html"><strong>BLOG</strong></button></a>
+<a href="our_clients.html"> <button id="buttons" class="button" onclick="our_clients.html"><strong>OUR CLIENTS</strong></button></a>
+<a href="contact.html"> <button id="buttons" class="button" onclick="contact.html" ><strong>CONTACT</strong></button></a>
+<a href="links.html"> <button id="buttons" class="button" onclick="links.html"><strong>LINKS</strong></button></a>
 </div>
 
 <h1 style="color:teal; font-size: 36px">BLOG<br/><br/></h1>
@@ -221,7 +243,7 @@ Three years before, a monster “snowicane” hit the region. The system brought
 </article>
 </body>
 
-<footer style="background-color:grey">
+<footer id="footer">
 <a href="https://blog.feedspot.com/weather_blogs/">
 <img src="https://blog.feedspot.com/wp-content/uploads/2018/01/weather_216px.png?x13245"/>
 <a href="https://www.facebook.com/WestCoastWeatherLLC?ref=ts&fref=ts">
@@ -229,7 +251,7 @@ Three years before, a monster “snowicane” hit the region. The system brought
 <a href="https://twitter.com/weatherlegal">
 <img src="https://westcoastweather.com/wp-content/uploads/2014/01/twitter.png" style="align-items: right"/> </a>
 <p style="text-align:center; color:white">© Copyright 2019 · Denali Mountain Weather · All Rights Reserved</p>
-<div style="text-align:center">
+<div id="footermenu">
 <strong><a href="https://www.westcoastweather.com/" style="font-size:18px; color:white">Home</a></strong> <span></span>
 <strong><a href="https://www.westcoastweather.com/services/" style="font-size:18px; color:white">  Services</a></strong> <span></span>
 <strong><a href="https://www.westcoastweather.com/case-studies/" style="font-size:18px; color:white">  Case Studies</a></strong> <span></span>
