@@ -7,7 +7,10 @@
 <style>
 
 #header {
-border: 2px solid teal;
+border: 2px solid lightsteelblue;
+background-image: linear-gradient(to top, lightblue, lightsteelblue, lightslategray, lightgrey, white);
+border-radius: 3%;
+min-width: 1300px;
 }
 
 #logo {
@@ -18,14 +21,20 @@ padding-top: 10px;
 }
 
 #buttons {
-color: charcoal;
-background-color: darksilver; 
+border-radius: 8%;
+color: darkslategray;
 font-size: 19px;
 padding-left: 30px;
 padding-right: 30px;
+margin-top: 5px;
+margin-left: 5px;
+margin-right: 5px;
 height: 45px;
-border: teal solid 1px;
+border: lightsteelblue solid 2px;
+background-image: linear-gradient(to top, lightblue, lightsteelblue, lightslategray, lightgrey, white);
+display: inline-block;
 }
+
 
 h1 {
 text-align: center;
@@ -70,6 +79,19 @@ padding-left: 20px
 padding-right: 350px;
 }
 
+#footer { 
+background-color: lightsteelblue;
+border: 2px teal solid;
+min-width: 1300px;
+}
+
+#footermenu {
+text-align: center;
+font-size: 18px;
+color: snow;
+font-size: 22px;
+word-spacing: 20px;
+}
 
 </style>
 
@@ -160,7 +182,7 @@ He attended the University of Washington to take some classes within the Atmosph
 </article>
 </body>
 
-<footer style="background-color:grey">
+<footer style="background-color:grey" id="footer">
 <hr id="tealbar" />
 <a href="https://blog.feedspot.com/weather_blogs/">
 <img src="https://blog.feedspot.com/wp-content/uploads/2018/01/weather_216px.png?x13245"/>
@@ -169,11 +191,11 @@ He attended the University of Washington to take some classes within the Atmosph
 <a href="https://twitter.com/weatherlegal">
 <img src="https://westcoastweather.com/wp-content/uploads/2014/01/twitter.png" style="align-items: right"/> </a>
 <p style="text-align:center; color:white">© Copyright 2019 · Denali Mountain Weather · All Rights Reserved</p>
-<div style="text-align:center">
-<strong><a href="https://www.westcoastweather.com/" style="font-size:18px; color:white">Home</a></strong> <span></span>
-<strong><a href="https://www.westcoastweather.com/services/" style="font-size:18px; color:white">  Services</a></strong> <span></span>
-<strong><a href="https://www.westcoastweather.com/case-studies/" style="font-size:18px; color:white">  Case Studies</a></strong> <span></span>
-<strong><a href="https://www.westcoastweather.com/contact/" style="font-size:18px; color:white">  Contact</a> </strong>
+<div style="text-align:center" id="footermenu">
+<strong><a href="https://www.westcoastweather.com/">Home</a></strong> <span></span>
+<strong><a href="https://www.westcoastweather.com/services/">  Services</a></strong> <span></span>
+<strong><a href="https://www.westcoastweather.com/case-studies/" style="word-spacing: 20px">  Case Studies</a></strong> <span></span>
+<strong><a href="https://www.westcoastweather.com/contact/" >  Contact</a> </strong>
 </div>
 </div>
 </footer>
