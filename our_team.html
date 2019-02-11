@@ -60,14 +60,20 @@ min-width: 1300px;
 }
 
 #grid {
-margin: auto auto;
-display: flex;
-width: 50%;
+margin-left: 60px;
+margin-right: 60px;
+display: grid;
+display: -ms-grid;
+grid-template-columns: 1fr 2fr 2fr 1fr;
 min-width: 1300px;
+padding: 30px;
 }
 
 figure {
 text-align: center;
+border: 6px solid lightsteelblue;
+padding: 20px;
+border-radius: 40px;
 }
 
 figcapture {
@@ -75,13 +81,15 @@ font-size: 13px;
 }
 
 .left {
+grid-column: 2;
+-ms-grid-column: 2;
 padding-right: 50px;
-grid-area: nav;
 float: left;
 }
 
 .right {
-grid-area: article;
+grid-column: 3;
+-ms-grid-column: 3;
 float: right;
 padding-left: 20px
 padding-right: 350px;
