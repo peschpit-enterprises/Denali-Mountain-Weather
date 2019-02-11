@@ -52,7 +52,6 @@ color: teal;
 #background {
 background-image: url('http://alaskamountainweather.com/wp-content/uploads/2015/02/home-1.jpg');
 margin-top: 5px;
-margin-bottom: 10px;
 background-position: center;
 background-repeat: no-repeat;
 background-size: 100% 100%;
@@ -61,11 +60,11 @@ min-width: 1300px;
 }
 
 #grid {
-margin-left: 60px;
+margin-left: 90px;
 margin-right: 60px;
 display: grid;
 display: -ms-grid;
-grid-template-columns: 1fr 2fr 2fr 1fr;
+grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
 min-width: 1300px;
 padding: 30px;
 }
@@ -77,6 +76,11 @@ padding: 20px;
 border-radius: 40px;
 }
 
+p {
+font-size: 19px;     
+}
+
+
 figcapture {
 font-size: 13px;
 }
@@ -84,15 +88,16 @@ font-size: 13px;
 .left {
 grid-column: 2;
 -ms-grid-column: 2;
+padding-left: 50px;
 padding-right: 50px;
 float: left;
 }
 
 .right {
-grid-column: 3;
--ms-grid-column: 3;
+grid-column: 4;
+-ms-grid-column: 4;
 float: right;
-padding-left: 20px
+padding-left: 50px;
 padding-right: 350px;
 }
 
@@ -138,11 +143,12 @@ word-spacing: 20px;
 <img src="http://alaskamountainweather.com/wp-content/uploads/2014/01/michael_witiw.jpg" width="130px" style="clip-path: inset(0px 9px 9px 0px)"/> 
 </div>
 <figcapture><strong>Michael R. Witiw, PhD</strong></figcapture> </figure>
-Mr. Witiw brings 30+ years of experience to Aviation Weather Law.
+<p>Mr. Witiw brings 30+ years of experience to Aviation Weather Law.
 
 He holds a Master’s degree from St. Louis University, and a PhD from the Florida Institute of Technology where he also served on the faculty.
 
 Michael served more than two decades in the United States Air Force, and has worked in numerous global locations such as Europe, Asia, Central America, and the Middle East. His Air Force career included a four-year tour with the Hurricane Hunters, a special squadron charged with tropical storm reconnaissance for the U.S. military.
+</p>
 <h4>Affiliations and Certifications</h4>
 <ul>
 <li>International Civil Aviation Organization, Technical Consultant Programme, roster of experts: Aeronautical Meteorology (2002-2009)</li>
