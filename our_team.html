@@ -16,6 +16,18 @@ min-width: 1300px;
 background-color: aliceblue;
 background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10082.png");
 background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10085.png");
+@media screen and (max-width: 319px) {
+grid-template-columns: 1fr;
+min-width: auto;
+@media screen and (max-width: 479px) {
+grid-template-columns: 1fr;
+    min-width: auto;
+@media screen and (max-width: 800px) {
+grid-template-columns: 1fr 1fr;
+    min-width: auto;
+}    
+}
+    
 }
 
 #logo {
@@ -66,7 +78,15 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: 100% 100%;
 border: 2px solid lightsteelblue;
-min-width: 800px;
+@media screen and (max-width: 319px) {
+min-width: auto;
+@media screen and (max-width: 479px) {
+    min-width: auto;
+@media screen and (max-width: 800px) {
+    min-width: auto;
+}    
+
+    
 }
 
 #grid {
@@ -78,11 +98,11 @@ grid-template-columns: 3fr 3fr;
 min-width: 1300px;
 padding: 30px;
 @media screen and (max-width: 319px) {
-grid-template-columns: 1fr;}    
+grid-template-columns: 1fr;    
 @media screen and (max-width: 479px) {
-grid-template-columns: 1fr;}    
+grid-template-columns: 1fr;    
 @media screen and (max-width: 800px) {
-grid-template-columns: 1fr 1fr;}    
+grid-template-columns: 1fr 1fr;    
 }
 
 figure {
@@ -109,13 +129,13 @@ padding-right: 50px;
 float: left;
 @media screen and (max-width: 319px) {
     grid-column: 1;
--ms-grid-column: 1;}
+-ms-grid-column: 1;
 @media screen and (max-width: 479px) {
     grid-column: 1;
--ms-grid-column: 1;}
+-ms-grid-column: 1;
 @media screen and (max-width: 800px) {
     grid-column: 2;
--ms-grid-column: 2;}
+-ms-grid-column: 2;
 }
 
 .right {
@@ -126,13 +146,13 @@ padding-left: 50px;
 padding-right: 50px;
 @media screen and (max-width: 319px) {
     grid-column: 1;
--ms-grid-column: 1;}
+-ms-grid-column: 1;
 @media screen and (max-width: 479px) {
     grid-column: 1;
--ms-grid-column: 1;}
+-ms-grid-column: 1;
 @media screen and (max-width: 800px) {
     grid-column: 2;
--ms-grid-column: 2;}
+-ms-grid-column: 2;
 }
 
 #weatherneeds {
@@ -146,6 +166,16 @@ background: lightblue;
 background: linear-gradient(to bottom, aliceblue, lightskyblue);
 border: 2px lightsteelblue solid;
 min-width: 1300px;
+@media screen and (max-width: 319px) {
+grid-template-columns: 1fr;
+min-width: auto;
+@media screen and (max-width: 479px) {
+grid-template-columns: 1fr;
+    min-width: auto;
+@media screen and (max-width: 800px) {
+grid-template-columns: 1fr 1fr;
+    min-width: auto;
+}    
 }
 
 #footermenu {
