@@ -35,6 +35,10 @@ text-shadow: 0px -0px 10px;
 line-height: 11px;
 }
 
+#fullwidth {
+min-width: 1300px;    
+}
+
 #buttons {
 border-radius: 8%;
 color: black;
@@ -107,7 +111,7 @@ MICHAEL FAGIN
 (877) 969-4786</small>
 </div>
 
-<div width="1280px">
+<div style="fullwidth">
 <a href="index.html"> <button class="button" id="buttons" onclick="index.html" style="margin-left: 30px;"><strong>HOME</strong></button></a>
 <a href="our_team.html"><button id="buttons" class="button" onclick="our_team.html"><strong>OUR TEAM</strong></button></a>
 <a href="alaska_weather.html"> <button id="buttons" class="dropbtn" onclick="alaska_weather.html"><strong>ALASKA WEATHER</strong></button></a>  
@@ -117,7 +121,7 @@ MICHAEL FAGIN
 <a href="links.html"> <button id="buttons" class="button" onclick="links.html"><strong>LINKS</strong></button></a>
 </div>
 
-<h1>Alaska's Weather</h1>
+<h1 id="fullwidth">Alaska's Weather</h1>
 <article> Mountainous, majestic and speckled with lakes, Alaska is America’s biggest hidden gem. It spans over 375 million acres (twice the size of Texas) and thus has very diverse weather patterns. For instance, Alaskan weather in May or June is vastly different than even in March.
 <figure id="float">
 <img id="MtForaker" src="http://alaskamountainweather.com/wp-content/uploads/2015/02/ak-1-300x225.jpg" />
