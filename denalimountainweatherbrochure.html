@@ -14,6 +14,17 @@ margin-right: 120px;
 background-color: snow;
 }
 
+#header {
+width: 300px;
+border: 2px solid lightsteelblue;
+border-radius: 3%;
+background-color: aliceblue;
+background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10085.png");
+box-shadow: 2px -2px 10px navy;
+transform: translate(355px, 0px);
+border-radius: 8%;
+}
+
 #logo {
 position: absolute;
  clip: rect(0px,100px,200px,0px);
@@ -34,19 +45,6 @@ color: charcoal;
 font-size: 18px;
 }
 
-.button {
-border: lightsteelblue solid 2px;
-background-color: aliceblue;
-background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10085.png");
-box-shadow: 2px -2px 10px navy;
-font-size: 27px;
-line-height: 30px;
-transform: translate(355px, 0px);
-letter-spacing: 1px;
-border-radius: 8%;
-color: navy;
-}
-
 img {
 transform: scale(0.4, 0.4);
 float: left;
@@ -60,10 +58,19 @@ float: right;
 padding-bottom: 25px;
 }
 
+h4 {
+color: navy;
+line-height: 29px;
+letter-spacing: 1px;
+font-size: 27px;
+}
+
 </style>
 <body>
-<img id="logo" src="http://alaskamountainweather.com/wp-content/uploads/2015/02/logo.png" />
-<a href="https://denali.peschpit.com"><button class="button"><strong>DENALI MOUNTAIN WEATHER</strong></button></a>
+<div id="header">
+<a href="https://denali.peschpit.com"><img id="logo" src="http://alaskamountainweather.com/wp-content/uploads/2015/02/logo.png" /></a>
+<h4><strong>DENALI MOUNTAIN WEATHER</strong></h4>
+</div>
 
 <article>
 <p>Head Meteorologist for Denali Mountain Weather, Michael Fagin has been forecasting major global climbing venues for over 16 years: Mt. Everest, K2, Denali, Mt. Hunter and Aconcagua, to name a few. Teaming with his expertise are associate Meteorologists Dr. Mike Witiw and Geoff Linsley. Our services are <a href="http://alaskamountainweather.com/our-clients/">trusted</a> by high profile <a href="https://everestweather.com/our-clients/">clients</a> worldwide.
