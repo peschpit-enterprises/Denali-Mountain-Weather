@@ -27,31 +27,6 @@ min-width: 1300px;
 background-color: aliceblue;
 background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10082.png");
 background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10085.png");
-@media screen and (min-width: 320px) and (max-width: 480px) {
-min-width: 300px;
-margin-left: auto;
-margin-right: auto;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-width: 50%;
-margin-left: auto;
-margin-right: auto;
-background-color: black;
-}
-@media screen and (min-width: 481px) and (max-width: 767px) {
-width: 50%;
-margin-left: auto;
-margin-right: auto;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-min-width: 450px;
-margin-left: auto;
-margin-right: auto;
-}
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-}
-@media screen and (min-width: 1281px) {
-}
 }
 
 #logo {
@@ -255,6 +230,30 @@ color: snow;
 font-size: 22px;
 word-spacing: 20px;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+grid {grid-template-columns: 1fr;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+grid {grid-template-columns: 1fr;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+grid {grid-template-columns: 1fr;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+grid {grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+grid {grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 1281px) {
+grid {grid-template-columns: 1fr 1fr;
+}
+
 
 </style>
 
