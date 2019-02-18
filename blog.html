@@ -70,6 +70,10 @@ opacity: 0.92;
 box-shadow: 2px -2px 10px royalblue;
 }
 
+#leadbutton {
+    margin-left: 0px;
+}
+
 figcaption {
 text-align: center;
 }
@@ -126,11 +130,13 @@ word-spacing: 20px;
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 #header {
 width: 100%;
-    margin-left: 100px;
+margin-left: 100px;
+#leadbutton {
+ margin   
 }
 #footer {
 width: 100%;
-    margin-left: 100px;
+margin-left: 100px;
 }
 #logo {
 transform: translate(450px, 5px);
@@ -141,9 +147,7 @@ transform: translate(285px, 2px);
 article {
 border: 0px solid lightsteelblue;
     margin-left: 100px;
-#buttons {
-    margin-left: 80px;
-}    
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 #header {
@@ -182,7 +186,7 @@ MICHAEL FAGIN
 </div>
 
 <div id="fullwidth">
-<a href="index.html"> <button class="button" id="buttons" onclick="index.html" style="margin-left: 30px;"><strong>HOME</strong></button></a>
+<a href="index.html"> <button class="button" id="buttons" id="leadbutton" onclick="index.html" style="margin-left: 30px;"><strong>HOME</strong></button></a>
 <a href="our_team.html"><button id="buttons" class="button" onclick="our_team.html"><strong>OUR TEAM</strong></button></a>
 <a href="alaska_weather.html"> <button id="buttons" class="dropbtn" onclick="alaska_weather.html"><strong>ALASKA WEATHER</strong></button></a>  
 <a href="blog.html"> <button id="buttons" class="button" onclick="blog.html"><strong>BLOG</strong></button></a>
