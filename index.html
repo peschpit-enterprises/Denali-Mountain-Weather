@@ -197,6 +197,9 @@ word-spacing: 20px;
     grid-template-columns: 1fr;
     padding: 0px;
     min-width: 405px;
+    -ms-grid-columns: 1fr;
+grid-template-columns: 1fr 7fr 9fr 7fr 1fr;
+
 }
 #header {
 width: 100%;
@@ -219,8 +222,8 @@ font-size: 21px;
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
 .container {
-    grid-template-columns: 1fr;
-    padding: 0px;
+display: initial;
+padding: 0px;
     min-width: 405px;
 }
 #header {
@@ -244,7 +247,7 @@ font-size: 21px;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 .grid {
-    grid-template-columns: 1fr;
+display: initial;
     padding: 10px;
 }
 #header {
@@ -272,6 +275,7 @@ transform: translate(370px, 2px);
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 .grid {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .container {
