@@ -115,7 +115,7 @@ border: 2px solid lightsteelblue;
 margin-left: 80px;
 margin-right: 80px;
 width: 100%;
-max-width: 1050px;
+max-width: 1055px;
 }
 
 #rotating-item-wrapper {
@@ -196,12 +196,12 @@ word-spacing: 20px;
 .container {
 grid-template-columns: 1fr;
 padding: 10px;
-    min-width: 430px;
+    width: 100%;
     margin: 0px;
     text-align: center;
 }
 #header {
-width: 380px;
+width: 370px;
 margin-left: 0px;
 margin-right: 0px;
 }
@@ -209,7 +209,7 @@ margin-right: 0px;
 min-width: 0px;
 }
 #footer {
-width: 380px;
+width: 370px;
 margin-left: 0px;
 margin-right: 0px;
 }
@@ -247,7 +247,11 @@ margin-left: 0px;
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 .container {
 padding: 10px;
+max-width: 1150px; 
+width: 100%;
 grid-template-columns: 1fr;
+margin-left: 10px;
+margin-right: 10px;
 }
 #header {
 width: 100%;
@@ -267,7 +271,7 @@ margin-left: 0px;
 margin-right: 0px;
 }
 #logo {
-transform: translate(240px, 8px);
+transform: translate(330px, 8px);
 }
 h4 {
 transform: translate(180px, 2px);
@@ -287,7 +291,7 @@ margin-left: 0px;
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 .container {
 width: 100%;
-max-width: 1160px;
+max-width: 1150px; 
 margin: 0px;
 padding: 10px;
 grid-template-columns: 1fr 1fr 1fr;
