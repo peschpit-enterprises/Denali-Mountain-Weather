@@ -197,8 +197,8 @@ word-spacing: 20px;
 display: initial;
     padding: 0px;
     min-width: 430px;
-    margin: 10px;
-        text-align: center;
+    margin: 0px;
+    text-align: center;
 }
 #header {
 width: 100%;
@@ -242,9 +242,10 @@ width: 400px;
 @media screen and (min-width: 481px) and (max-width: 767px) {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-.grid {
+.container {
 display: initial;
-padding: 10px;
+padding: 0px;
+grid-template-columns: 1fr;
 }
 #header {
 width: 100%;
@@ -264,10 +265,10 @@ margin-left: 0px;
 margin-right: 0px;
 }
 #logo {
-transform: translate(520px, 8px);
+transform: translate(536px, 8px);
 }
 h4 {
-transform: translate(370px, 2px);
+transform: translate(230px, 2px);
 }
 #rotating-item-wrapper {
                 width: 1130px;
@@ -277,13 +278,11 @@ transform: translate(370px, 2px);
                 }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 .container {
 width: 100%;
 max-width: 1160px;
+margin: 0px;
+grid-template-columns: 1fr 1fr 1fr;
 }
 #header {
 width: 100%;
@@ -312,7 +311,7 @@ transform: translate(330px, 2px);
                 }
 }
 @media screen and (min-width: 1281px) {
-.grid {
+.container {
     grid-template-columns: 1fr 1fr 1fr;
 }
 #header {
