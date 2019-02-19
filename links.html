@@ -102,63 +102,68 @@ font-size: 22px;
 word-spacing: 20px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
 #logo {
-transform: translate(650px, 35px);
+transform: translate(130px, 5px);
 }
 h4 {
-transform: translate(50px, 2px);
+transform: translate(0px, 0px);
+font-size: 21px;    
 }
 #header {
-width: 760px;
-margin-left: 50px;
+width: 370px;
 }
 #footer {
-width: 760px;
-margin-left: 50px;
+width: 370px;
+}
+.margins {
+margin-left: 20px;
+margin-right: 20px;
+}
+#fullwidth {
+min-width: 0px;    
 }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-#header {
-width: 100%;
-margin-left: 50px;
 }
-#footer {
-width: 100%;
-margin-left: 50px;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+h2 {
+margin-left: 0px;   
 }
 #logo {
-transform: translate(460px, 5px);
+transform: translate(330px, 5px);
 }
 h4 {
-transform: translate(305px, 2px);
+transform: translate(165px, 0px);
 }
-h2 {
-margin-left: 100px;   
+#fullwidth {
+min-width: 0px;    
 }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 #header {
 width: 100%;
-margin-left: 50px;
+margin-left: 0px;
 }
 #footer {
 width: 100%;
-margin-left: 50px;
+margin-left: 0px;
 }
 #logo {
-transform: translate(460px, 5px);
-}
-h4 {
-transform: translate(305px, 2px);
+transform: translate(440px, 5px);
 }
 h2 {
-margin-left: 100px;   
+margin-left: 0px;   
+}
+h4 {
+transform: translate(285px, 0px);
+}
+#fullwidth {
+min-width: 0px;    
 }
 }
-
 
 </style>
 
