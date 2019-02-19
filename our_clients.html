@@ -13,7 +13,6 @@ background-color: snow;
 #header {
 border: 2px solid lightsteelblue;
 border-radius: 3%;
-min-width: 1300px;
 background-color: aliceblue;
 background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10082.png");
 background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10085.png");
@@ -93,14 +92,12 @@ margin-left: 60px;
 margin-right: 60px;
 background: aliceblue;
 background: linear-gradient(to top, aliceblue, snow, aliceblue, snow, aliceblue);
-min-width: 1100px;
 }
 
 #footer { 
 background: lightblue;
 background: linear-gradient(to bottom, aliceblue, lightskyblue);
 border: 2px lightsteelblue solid;
-min-width: 1300px;
 }
 
 #footermenu {
@@ -112,10 +109,10 @@ word-spacing: 20px;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
 #logo {
-transform: translate(90px, 20px);
+transform: translate(180px, 5px);
 }
 h4 {
-transform: translate(30px, -4px);
+transform: translate(5px, -4px);
 }
 #header {
 width: 480px;
@@ -127,6 +124,8 @@ article {
 margin-left: 20px;
 width: 440px;
 }
+#fullwidth {
+min-width: 0px;    
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
 
