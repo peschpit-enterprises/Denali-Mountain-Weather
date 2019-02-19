@@ -22,7 +22,6 @@ background-color: snow;
 #header {
 border: 2px solid lightsteelblue;
 border-radius: 3%;
-min-width: 1300px;
 background-color: aliceblue;
 background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10082.png");
 background-image: url("http://pngimg.com/uploads/icicle/icicle_PNG10085.png");
@@ -115,14 +114,12 @@ margin-left: 60px;
 margin-right: 60px;
 margin-bottom: 50px;
 border: 2px solid lightsteelblue;
-min-width: 1100px;
 }
 
 #footer { 
 background: lightblue;
 background: linear-gradient(to bottom, aliceblue, lightskyblue);
 border: 2px lightsteelblue solid;
-min-width: 1300px;
 }
 
 #footermenu {
@@ -133,75 +130,101 @@ font-size: 22px;
 word-spacing: 20px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-h2 {
-margin-left: 30px;    
-}
-article {
-margin-left: 30px;
-}
-#header {
-width: 1200px;
-}
-
-#footer {
-width: 1200px;
-}
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-#header {
-width: 100%;
-margin-left: 100px;
-}
-#leadbutton {
- margin-left: 80px;
-}
-#footer {
-width: 100%;
-margin-left: 100px;
-}
+@media screen and (min-width: 320px) and (max-width: 480px) {
 #logo {
-transform: translate(550px, 5px);
+transform: translate(130px, 5px);
 }
 h4 {
-transform: translate(385px, 2px);
+transform: translate(0px, 0px);
+font-size: 21px;    
+}
+#header {
+width: 355px;
+margin-left: 0px;
+margin-right: 0px;
+}
+#footer {
+width: 355px;
+margin-left: 0px;
+margin-right: 0px;
 }
 article {
-border: 0px solid lightsteelblue;
-    margin-left: 150px;
-    width: 1150px;
+margin-left: 0px;
+width: 330px;
+margin-right: 0px;
 }
+#fullwidth {
+min-width: 0px;    
+}
+#typhoonfig {
+padding-right: 15px;
+float: none;
+border: none;
+}
+#float {
+float: none;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 h2 {
-margin-left: 40px;
+margin-left: 0px;   
+}
+#header {
+width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+}
+#footer {
+width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+}
+#logo {
+transform: translate(330px, 5px);
+}
+h4 {
+transform: translate(165px, 0px);
+}
+#fullwidth {
+min-width: 0px;    
+}
+article {
+margin-left: 17px;
+width: 700px;
 }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 #header {
 width: 100%;
-    margin-left: 100px;
+margin-left: 0px;
+margin-right: 0px;
 }
 #footer {
 width: 100%;
-    margin-left: 100px;
+margin-left: 0px;
+margin-right: 0px;
 }
 #logo {
-transform: translate(550px, 5px);
-}
-h4 {
-transform: translate(385px, 2px);
+transform: translate(440px, 5px);
 }
 h2 {
-margin-left: 40px;
+margin-left: 0px;   
+}
+h4 {
+transform: translate(285px, 0px);
 }
 article {
-border: 0px solid lightsteelblue;
-    margin-left: 150px;
-    width: 1150px;
-    
-#buttons {
-    margin-left: 80px;
-}    
+margin-left: 90px;
+width: 800px;
+}
+#fullwidth {
+min-width: 0px;    
+}
 }
 
 </style>
@@ -227,7 +250,7 @@ MICHAEL FAGIN
 <a href="links.html"> <button id="buttons" class="button" onclick="links.html"><strong>LINKS</strong></button></a>
 </div>
 
-<h2 id="fullwidth">BLOG<br/><br/></h2>
+<h2>BLOG<br/><br/></h2>
 
 <article name="Alaska's Weather" style="background-color: lightblue">
 <h1>Alaska's Weather</h1>
